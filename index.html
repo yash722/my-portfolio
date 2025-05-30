@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yash Rao | Data Scientist</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">YR<span class="accent">.</span></a>
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="animate-in">
+          <span class="greeting">Hello, I'm</span>
+          <span class="name">Yash Rao</span>
+          <span class="title">Data Scientist & Analyst</span>
+        </h1>
+        <p class="hero-text animate-in">
+          Transforming complex data into actionable insights and elegant visualizations
+        </p>
+        <div class="hero-buttons animate-in">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <canvas id="dataViz"></canvas>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm a data scientist and analyst passionate about transforming data into valuable insights. With expertise in statistical analysis, machine learning, and data visualization, I help organizations make data-driven decisions.</p>
+          <p>My approach combines technical expertise with strong communication skills to translate complex findings into clear, actionable recommendations. I'm constantly exploring new technologies and methodologies to enhance my analytical capabilities.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-count="5">0</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="20">0</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="10">0</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="image-container">
+            <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Professional portrait" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-content">
+        <div class="skills-category">
+          <h3 class="category-title">Data Analysis</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-name">Statistical Analysis</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Data Cleaning & Preprocessing</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Exploratory Data Analysis</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="92"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">A/B Testing</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skills-category">
+          <h3 class="category-title">Machine Learning</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-name">Supervised Learning</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="88"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Unsupervised Learning</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="82"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Deep Learning</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="75"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Natural Language Processing</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skills-category">
+          <h3 class="category-title">Tools & Technologies</h3>
+          <div class="skills-grid">
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fab fa-python"></i>
+              </div>
+              <span class="tech-name">Python</span>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <span class="tech-name">SQL</span>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fab fa-r-project"></i>
+              </div>
+              <span class="tech-name">R</span>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <span class="tech-name">Tableau</span>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <span class="tech-name">TensorFlow</span>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fab fa-aws"></i>
+              </div>
+              <span class="tech-name">AWS</span>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <span class="tech-name">Git</span>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <span class="tech-name">Spark</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+        <button class="filter-btn" data-filter="data-viz">Data Visualization</button>
+        <button class="filter-btn" data-filter="analysis">Data Analysis</button>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="machine-learning">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/7567434/pexels-photo-7567434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Machine Learning Project" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Predictive Customer Churn Model</h3>
+            <p class="project-description">
+              Developed a machine learning model to predict customer churn with 92% accuracy, enabling proactive retention strategies.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Random Forest</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-eye"></i> View Case Study
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card" data-category="data-viz">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/186464/pexels-photo-186464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Data Visualization Project" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Interactive Sales Dashboard</h3>
+            <p class="project-description">
+              Built an interactive dashboard visualizing sales performance across regions, products, and time periods.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Tableau</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Data Visualization</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-eye"></i> View Dashboard
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-file-alt"></i> Report
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card" data-category="analysis">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/7947359/pexels-photo-7947359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Data Analysis Project" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Market Basket Analysis</h3>
+            <p class="project-description">
+              Performed association rule mining on transaction data to identify product affinities and optimize store layouts.
+            </p>
+            <div class="project-tags">
+              <span class="tag">R</span>
+              <span class="tag">Association Rules</span>
+              <span class="tag">Data Mining</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-eye"></i> View Study
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="project-card" data-category="machine-learning">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/5473337/pexels-photo-5473337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="NLP Project" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Sentiment Analysis Engine</h3>
+            <p class="project-description">
+              Created an NLP model to analyze customer reviews and social media mentions, extracting sentiment and key themes.
+            </p>
+            <div class="project-tags">
+              <span class="tag">NLP</span>
+              <span class="tag">BERT</span>
+              <span class="tag">Python</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-eye"></i> View Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 5 -->
+        <div class="project-card" data-category="data-viz">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Data Visualization Project" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">COVID-19 Impact Analysis</h3>
+            <p class="project-description">
+              Analyzed and visualized COVID-19 data to understand socioeconomic impacts across different regions and demographics.
+            </p>
+            <div class="project-tags">
+              <span class="tag">D3.js</span>
+              <span class="tag">Python</span>
+              <span class="tag">Geospatial Analysis</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-eye"></i> View Visualization
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-file-pdf"></i> Research Paper
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 6 -->
+        <div class="project-card" data-category="analysis">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Time Series Analysis Project" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Time Series Forecasting</h3>
+            <p class="project-description">
+              Implemented ARIMA and Prophet models to forecast sales and inventory needs, reducing stockouts by 35%.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Time Series</span>
+              <span class="tag">Prophet</span>
+              <span class="tag">Forecasting</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-eye"></i> View Case Study
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section-cta">
+        <a href="#" class="btn btn-secondary">View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <h2 class="section-title">Experience & Education</h2>
+      <div class="timeline">
+        <!-- Experience Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span>2022 - Present</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Senior Data Scientist</h3>
+            <h4 class="timeline-subtitle">Tech Innovations Inc.</h4>
+            <p class="timeline-description">
+              Lead data scientist for customer analytics and product intelligence teams. Developed and deployed machine learning models that increased conversion rates by 28% and reduced customer acquisition costs by 15%.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Python</span>
+              <span class="tag">A/B Testing</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span>2020 - 2022</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Data Scientist</h3>
+            <h4 class="timeline-subtitle">DataDriven Solutions</h4>
+            <p class="timeline-description">
+              Conducted advanced analytics and built predictive models to optimize business processes. Developed a churn prediction model that helped retain $1.2M in annual revenue.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Predictive Modeling</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Data Visualization</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Experience Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span>2018 - 2020</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Data Analyst</h3>
+            <h4 class="timeline-subtitle">Insight Analytics Group</h4>
+            <p class="timeline-description">
+              Performed statistical analyses and created reports for diverse clients across retail and healthcare sectors. Built interactive dashboards to track KPIs and business metrics.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Statistical Analysis</span>
+              <span class="tag">Tableau</span>
+              <span class="tag">Excel</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Education Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span>2016 - 2018</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Master of Science in Data Science</h3>
+            <h4 class="timeline-subtitle">University of Technology</h4>
+            <p class="timeline-description">
+              Specialized in machine learning and statistical modeling. Thesis on "Optimizing Recommendation Systems Using Deep Learning Techniques."
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">GPA: 3.92/4.0</span>
+              <span class="tag">Research Assistant</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Education Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">
+            <span>2012 - 2016</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Bachelor of Science in Computer Science</h3>
+            <h4 class="timeline-subtitle">State University</h4>
+            <p class="timeline-description">
+              Minor in Mathematics. Coursework included algorithms, data structures, database systems, and statistics.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">GPA: 3.8/4.0</span>
+              <span class="tag">Dean's List</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section-cta">
+        <a href="#" class="btn btn-secondary">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials section">
+    <div class="container">
+      <h2 class="section-title">What People Say</h2>
+      <div class="testimonials-slider">
+        <div class="testimonial-track">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <div class="testimonial-text">
+                <p>"Yash's analytical abilities are exceptional. He quickly identified patterns in our customer data that we had missed for years, leading to a significant improvement in our targeting strategy."</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-image">
+                  <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="John Smith" />
+                </div>
+                <div class="author-info">
+                  <h4 class="author-name">John Smith</h4>
+                  <p class="author-title">Marketing Director, RetailTech</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 2 -->
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <div class="testimonial-text">
+                <p>"Working with Yash transformed how we approach data. His visualizations made complex information accessible to everyone in the organization, driving better decision-making at all levels."</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-image">
+                  <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sarah Johnson" />
+                </div>
+                <div class="author-info">
+                  <h4 class="author-name">Sarah Johnson</h4>
+                  <p class="author-title">CEO, Data Solutions Inc.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 3 -->
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <div class="testimonial-text">
+                <p>"The predictive model Yash developed for us has been a game-changer. We've reduced inventory costs by 22% while maintaining service levels. His technical expertise combined with business acumen is rare and valuable."</p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-image">
+                  <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Michael Chen" />
+                </div>
+                <div class="author-info">
+                  <h4 class="author-name">Michael Chen</h4>
+                  <p class="author-title">Supply Chain Manager, Global Retail</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="testimonial-prev" aria-label="Previous testimonial">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="testimonial-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="testimonial-next" aria-label="Next testimonial">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p>Interested in working together or have questions about my projects? Feel free to reach out!</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <a href="mailto:yashsb108@gmail.com">yashsb108@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Phone</h4>
+                <a href="tel:+18577538713">+1 (857) 753-8713</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Location</h4>
+                <p>Boston, MA</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/yashrao01/" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Medium">
+              <i class="fab fa-medium-m"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="#" class="logo">YR<span class="accent">.</span></a>
+          <p>Transforming data into insights</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/yashrao01/" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="Medium">
+              <i class="fab fa-medium-m"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Yash Rao. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
