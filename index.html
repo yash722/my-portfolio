@@ -9,7 +9,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
@@ -396,51 +401,9 @@
       <h2 class="section-title">Experience & Education</h2>
       <div class="timeline-wrapper">
 
-        <!-- Row 1: Cutso ↔ VIT -->
+        <!-- Row 1: BU MS ↔ BU RA -->
         <div class="timeline-row">
-          <div class="timeline-item left">
-            <div class="timeline-content">
-              <h3 class="timeline-title">Data Analyst</h3>
-              <h4>Cutso Foods LLP</h4>
-              <span class="timeline-date">Jun 2020 – Jul 2022</span>
-              <ul>
-                <li>Built REST APIs, improved SQL by 35%.</li>
-                <li>Created dashboards & automated reports.</li>
-                <li>Reduced latency by 30% with multithreading.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-dot"></div>
-          <div class="timeline-item right">
-            <div class="timeline-content">
-              <h3 class="timeline-title">B.Tech in Computer Science</h3>
-              <h4>VIT, India</h4>
-              <span class="timeline-date">Jul 2019 – Jun 2023</span>
-              <p>GPA: 8.90 / 10</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Row 2: IIT Roorkee ↔ (empty space) -->
-        <div class="timeline-row">
-          <div class="timeline-item left">
-            <div class="timeline-content">
-              <h3 class="timeline-title">Research Intern</h3>
-              <h4>IIT Roorkee</h4>
-              <span class="timeline-date">Sep 2022 – Feb 2023</span>
-              <ul>
-                <li>Developed 1D–2D ResNet50 for hyperspectral imagery.</li>
-                <li>Achieved 91% accuracy and ROC-AUC of 0.995.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-dot"></div>
-          <div class="timeline-item right empty"></div>
-        </div>
-
-        <!-- Row 3: BU RA ↔ BU MS -->
-        <div class="timeline-row">
-          <div class="timeline-item left">
+          <div class="timeline-item left" data-aos="fade-right">
             <div class="timeline-content">
               <h3 class="timeline-title">Graduate Research Assistant</h3>
               <h4>Boston University</h4>
@@ -452,8 +415,8 @@
               </ul>
             </div>
           </div>
-          <div class="timeline-dot"></div>
-          <div class="timeline-item right">
+          <div class="timeline-dot" data-aos="zoom-in"></div>
+          <div class="timeline-item right" data-aos="fade-left">
             <div class="timeline-content">
               <h3 class="timeline-title">M.S. in Applied Data Analytics</h3>
               <h4>Boston University</h4>
@@ -463,9 +426,52 @@
           </div>
         </div>
 
+        <!-- Row 2: IIT Roorkee ↔ (empty) -->
+        <div class="timeline-row">
+          <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-content">
+              <h3 class="timeline-title">Research Intern</h3>
+              <h4>IIT Roorkee</h4>
+              <span class="timeline-date">Sep 2022 – Feb 2023</span>
+              <ul>
+                <li>Developed 1D–2D ResNet50 for hyperspectral imagery.</li>
+                <li>Achieved 91% accuracy and ROC-AUC of 0.995.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-dot" data-aos="zoom-in"></div>
+          <div class="timeline-item right empty"></div>
+        </div>
+
+        <!-- Row 3: Cutso ↔ VIT -->
+        <div class="timeline-row">
+          <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-content">
+              <h3 class="timeline-title">Data Analyst</h3>
+              <h4>Cutso Foods LLP</h4>
+              <span class="timeline-date">Jun 2020 – Jul 2022</span>
+              <ul>
+                <li>Built REST APIs, improved SQL by 35%.</li>
+                <li>Created dashboards & automated reports.</li>
+                <li>Reduced latency by 30% with multithreading.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-dot" data-aos="zoom-in"></div>
+          <div class="timeline-item right" data-aos="fade-left">
+            <div class="timeline-content">
+              <h3 class="timeline-title">B.Tech in Computer Science</h3>
+              <h4>VIT, India</h4>
+              <span class="timeline-date">Jul 2019 – Jun 2023</span>
+              <p>GPA: 8.90 / 10</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
+
 
 
 
