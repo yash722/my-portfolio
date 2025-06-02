@@ -802,6 +802,65 @@ img {
   font-weight: 500;
 }
 
+.accordion-item {
+    border-bottom: 1px solid var(--color-border, #ccc);
+    margin-bottom: 1rem;
+  }
+
+  .accordion-header {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0.75rem;
+    color: var(--color-text);
+    cursor: pointer;
+  }
+
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 0.75rem;
+  }
+
+  .accordion-content ul {
+    list-style: none;
+    padding: 0.5rem 0;
+  }
+
+  .accordion-content li {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed var(--color-border, #eee);
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px;
+    font-weight: 500;
+  }
+
+  .expert {
+    background-color: #0071e3;
+    color: white;
+  }
+
+  .advanced {
+    background-color: #005bb5;
+    color: white;
+  }
+
+  .proficient {
+    background-color: #004080;
+    color: white;
+  }
+
 /* --------------------------- */
 /* Projects Section            */
 /* --------------------------- */
