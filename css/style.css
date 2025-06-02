@@ -776,7 +776,7 @@ img {
 /* Experience Section          */
 /* --------------------------- */
 
-.timeline {
+/* .timeline {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
@@ -858,7 +858,59 @@ img {
   color: var(--color-text-secondary);
   font-size: 0.95rem;
   margin-bottom: var(--space-sm);
+} */
+
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
+
+.timeline-card {
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-role {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-org {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: var(--color-text-secondary);
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.timeline-card ul {
+  padding-left: 1rem;
+  list-style-type: disc;
+  color: var(--color-text-secondary);
+}
+
+.timeline-card.education {
+  background-color: var(--color-bg);
+  border-left: 5px solid var(--color-accent);
+}
+
 
 /* Alternate timeline items */
 .timeline-item:nth-child(even) .timeline-date {
