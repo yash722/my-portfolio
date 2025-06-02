@@ -1339,7 +1339,7 @@ img {
 }
 
 .cert-link {
-  color: #007BFF;
+  color: var(--color-bg-light);
   font-weight: 500;
   text-decoration: underline;
 }
