@@ -1304,3 +1304,31 @@ img {
     text-align: center;
   }
 }
+
+.certifications.section {
+  padding: 60px 0;
+}
+
+.certification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.certification-item h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.certification-item p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+.certification-link {
+  color: #007BFF;
+  text-decoration: underline;
+  font-weight: 500;
+}
