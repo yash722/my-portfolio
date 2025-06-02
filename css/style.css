@@ -52,7 +52,7 @@
 }
 
 /* Light Theme Variables */
-.light-theme {
+body.light-theme {
   --color-bg: #F5F5F7;
   --color-bg-light: #FFFFFF;
   --color-text: #1D1D1F;
